@@ -34,10 +34,13 @@ public class ReadFromTxt {
                 String str = ar2[2].trim();
                 ar1.add(Integer.parseInt(str));
                 System.out.println(row);
-            }br.close();
+            }
+            br.close();
 
         } catch (FileNotFoundException e) {
             System.err.println("file not found");
+        } catch (NumberFormatException e) {
+            System.err.println("So khong hop le");
         } catch (Exception e) {
             System.err.println("file text error");
         }
