@@ -10,20 +10,21 @@ public class ReadWrite2 {
     }
 
     public void readWrite() {
-        String source = "E:\\codegym2023\\Modun2\\Bai16\\thuchanh\\source.txt";
-        String end = "E:\\codegym2023\\Modun2\\Bai16\\thuchanh\\end.txt";
+        String source = "E:\\codegym2023\\Modun2\\Bai16\\thuchanh\\txt\\source.txt";
+        String end = "E:\\codegym2023\\Modun2\\Bai16\\thuchanh\\txt/end.txt";
         try {
             File f = new File(end);
             if (f.exists()) {
                 throw new FileAlreadyExistsException("end.txt");
             }
             InputStream is = new FileInputStream(source);
-            BufferedInputStream bis = new BufferedInputStream(is);
+            BufferedReader bis = new BufferedReader(new InputStreamReader(is));
             OutputStream os = new FileOutputStream(end);
-            BufferedOutputStream bos = new BufferedOutputStream(os);
-            int c;
-            while ((c = bis.read()) != -1) {
-                bos.write(c);
+            BufferedWriter bos = new BufferedWriter(new OutputStreamWriter(os));
+            String line;
+            while ((line = bis.readLine()) != null) {
+                bos.write(line);
+                bos.newLine();
             }
             bis.close();
             bos.close();

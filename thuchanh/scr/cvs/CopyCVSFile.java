@@ -16,7 +16,7 @@ public class CopyCVSFile {
         Path source = Paths.get(str1);
         Path target = Paths.get(str2);
         try{
-            File f= new File(str2);
+            File f = new File(str2);
             if (f.exists()){
                 throw new FileAlreadyExistsException(str2);
             }

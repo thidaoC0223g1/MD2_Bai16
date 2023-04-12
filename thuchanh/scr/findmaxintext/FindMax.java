@@ -11,7 +11,7 @@ public class FindMax {
         String path = input.nextLine();
         int i = findMax(readTxt(path));
         FindMax x = new FindMax();
-        x.writeTxt("E:\\codegym2023\\Modun2\\Bai16\\thuchanh\\result2.txt", i);
+        x.writeTxt("E:\\codegym2023\\Modun2\\Bai16\\thuchanh\\txt\\result2.txt", i);
     }
     public static ArrayList<Integer> readTxt(String path) {
         ArrayList<Integer> number = new ArrayList<>();

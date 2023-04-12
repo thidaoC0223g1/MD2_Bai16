@@ -8,8 +8,8 @@ public class ReadWrite {
     public static void main(String[] args) {
         ArrayList<String> ar;
         ReadWrite rw = new ReadWrite();
-        ar =readFile("E:\\codegym2023\\Modun2\\Bai16\\thuchanh\\source.txt");
-        rw.copyFile("E:\\codegym2023\\Modun2\\Bai16\\thuchanh\\recive.txt",ar);
+        ar =readFile("E:\\codegym2023\\Modun2\\Bai16\\thuchanh\\txt\\source.txt");
+        rw.copyFile("E:\\codegym2023\\Modun2\\Bai16\\thuchanh\\txt\\recive.txt",ar);
     }
 
     public static ArrayList<String> readFile(String path) {

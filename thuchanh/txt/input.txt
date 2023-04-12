@@ -1,0 +1,3 @@
+tien, hung yen, 3000, 21 tuoi
+thi, bac ninh, 2000, 34 tuoi
+vananh, ha noi, 4000, 34 tuoi
